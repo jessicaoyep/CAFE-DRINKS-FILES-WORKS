@@ -27,8 +27,41 @@ h1, p{
   grid-auto-rows: auto; 
 }
 
+#drop-area {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
 
-button{
+}
+
+#preview {
+  width: 50%;
+  height: 250px;
+  display: flex;
+  border-radius: 20px;
+  border: 2px dashed #c29d93;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#preview img{
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+#preview.has-image p {
+    display: none;
+}
+
+
+
+.btn-coffee{
     background-color: #c29d93;
     color: white;
     border: none;
@@ -38,14 +71,14 @@ button{
     cursor: pointer;
 }
 
-button2{
-    background-color: #8ba888;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 20px;
-    cursor: pointer;
+.btn-matcha{
+  background-color: #8ba888;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 button:hover{

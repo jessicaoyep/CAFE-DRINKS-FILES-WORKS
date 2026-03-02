@@ -9,7 +9,6 @@
     <title>Upload a Recipe | Cafe Recipes</title>
     <link rel="stylesheet" href="upload.css">
     <link rel="stylesheet" href="nav.css">
-    <script src="upload.js"></script>
     <meta name="referrer" content="strict-origin-when-cross-origin" />
 
 </head>
@@ -47,16 +46,23 @@
             <textarea id="story" name="story" rows="4" cols="50" required></textarea><br><br>
 
 
-            <label for="drinktype">Coffee or Matcha:</label><br>
-            <button type="coffee">coffee</button> <button2 type="matcha">matcha</button2><br><br>
+            <label>Coffee or Matcha:</label><br>
+            <button type="button" class="btn-coffee">coffee</button> 
+            <button type="button" class="btn-matcha">matcha</button> <br><br>
 
-            <label for="image">Upload Image:</label>
-            <input type="text" id="image" name="image" required><br><br>
 
-            
-            <button type="submit">Submit</button>
+            <label for="input-file" id="drop-area"> <br><br>
+                <input type="file" accept="image/*" id="input-file" hidden>
+                <div id="preview">
+                    <p id="preview-text">Drag and drop or click here <br>to upload an image</p>
+                </div>
+            </label> <br><br>
+
+
+            <button type="submit" class="btn-coffee">Submit</button>
 
         </form>
     </div>
+    <script src="upload.js"></script>
 </body>
 </html>
