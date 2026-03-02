@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p, ol{
+  font-family: "Lora", serif;
+  color: white;
+  margin: 5px;
+}
+
+img{
+    margin: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #f1dccd;
+    border-radius: 10px;
+}
+
+
+/* Style for the header section */
+.header{
+    background-color: #8ba888;
+    padding: 40px;
+    margin-bottom: 20px;
+
+    h1, p{
+        color: white;
+        font-family: "Lora", serif;
+        text-align: center;
+    }
+
+}
+
+/* Style for the short recipe cards */
+.recipe-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #8ba888;
+    padding: 20px;
+    text-align: center;
+
+    h2, p{
+        color: white;
+        font-family: "Lora", serif;
+        text-align: center;
+    }
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
+
+.recipe-card-container{
+    display: grid;
+    /* Creates two columns of equal width that take up all available space */
+    grid-template-columns: 1fr 1fr;
+    /* Optional: Adds space between the grid items */
+    gap: 20px; 
+    /* Optional: Defines the height of implicitly created rows (adjust as needed) */
+    grid-auto-rows: auto; 
+
+    margin: 20px;
+}
+
+
+.btn{
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: "Lora", serif;
+    text-align: center;
+    margin: 10px;
+}
+
+.btn:hover{
+    background-color: #ffffff;
+    color:#333;
+}
+
+
+/* Style for the popup recipe cards with instructions and more info*/
+.popup-body{
+  display: grid;
+  /* Creates two columns of equal width that take up all available space */
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  /* Optional: Defines the height of implicitly created rows (adjust as needed) */
+  grid-auto-rows: auto; 
+  padding: 20px;
+}
+
+.popup{
+    background-color: #8ba888;
+    border-radius: 20px;
+    border-color: #f1dccd;
+    border-style: solid;
+    border-width: 8px;
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    text-align: center;
+    visibility: hidden;
+    padding: 20px;
+    width: 500px;
+
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.open-popup{
+    visibility: visible;
+}
+

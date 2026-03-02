@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Recipes! </title>
+     <link rel = "stylesheet" href = "designTwo.css" />
+     <link rel = "stylesheet" href = "nav.css" />
+</head>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="matcha.html">Matcha Recipes</a>
+    <a href = "coffee.html">Coffee Recipes</a>
+    <a href="upload.html">Upload a Recipe</a>
+</nav>
+
+    <!-- Visible content goes here -->
+     <body>
+        <div class = "header">
+            <h1 class = "title">
+                Cafe Recipes!
+            </h1>
+            
+            <p id = "description"> 
+                Interested in making your 
+                favorite recipes at home? <br> 
+                Cafe Drinks provides you
+                endless of recipes from <br> 
+                others for you to recreate! 
+            </p>
+
+        </div>
+     </body>
+
+        <body>
+            <div class = "container">
+                <form>
+                    <input type = "text" placeholder = "Enter a drink!" onchange = "openpage()">
+                    <button type = "submit"> Search </button>
+                    <script>
+                        function openpage(){
+                            var input = document.querySelector("input").value;
+                            if(input == "matcha"){
+                                window.open("matcha.html");
+                            }
+
+                            if(input == "coffee"){
+                                window.open("coffee.html");
+                            }
+                        }
+                    </script>
+
+                </form>
+            </div>
+
+            <div class = "matcha">
+                <img class = "my_drink" src = "matcha.jpg" alt = "First Drink Image">
+
+            </div>
+        </body>
+
+        
+
+    

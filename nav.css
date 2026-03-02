@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #f1dccd;
+    padding: 10px;
+    text-align: right;
+}
+
+nav a{
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #c29d93;
+}
+
+nav a:hover{
+    background-color: #ffffff;
+    color:#333;
+}

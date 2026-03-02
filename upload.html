@@ -1,0 +1,58 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+</style>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha Recipes | Cafe Recipes</title>
+    <link rel="stylesheet" href="upload.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="upload.js"></script>
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+</head>
+<nav>
+    <ul>
+        <a href="index.html">Home</a>
+        <a href="matcha.html">Matcha Recipes</a>
+        <a href = "coffee.html">Coffee Recipes</a>
+        <a href="upload.html">Upload a Recipe</a>
+    </ul>
+</nav>
+<body>
+    <!-- Visible content goes here -->
+    <div class = "header">
+        <h1>Upload</h1>
+    </div>
+    <div class="input-container">
+        <form>
+            <label for="recipe-name">Recipe Name:</label>
+            <input type="text" id="recipe-name" name="recipe-name" required><br><br>
+
+            <label for="ingredients">Ingredients:</label><br>
+            <textarea id="ingredients" name="ingredients" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="size">Size:</label><br>
+            <textarea id="size" name="size" rows="1" cols="20" required></textarea><br><br>
+            
+            <label for="time">Time to make:</label><br>
+            <textarea id="time" name="time" rows="1" cols="20" required></textarea><br><br>
+            
+            <label for="instructions">Instructions:</label><br>
+            <textarea id="instructions" name="instructions" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="drinktype">Coffee or Matcha:</label><br>
+            <button type="coffee">coffee</button> <button2 type="matcha">matcha</button2><br><br>
+
+            <label for="image">Upload Image:</label>
+            <input type="text" id="image" name="image" required><br><br>
+
+            
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+</html>

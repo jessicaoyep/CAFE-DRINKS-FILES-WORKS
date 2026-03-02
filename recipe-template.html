@@ -1,0 +1,57 @@
+<!--
+
+CLASS NAMES
+- "drink-name"
+- "ingredients"
+- "time"
+- "size"
+- "instructions"
+- "money-saved"
+
+-->
+
+
+div class="recipe-card">
+            <!-- DRINK NAME -->
+            <h2 class = "drink-name"></h2>
+            <!-- IMAGE -->
+            <img src = "./images/stagger-matcha.jpg" />
+            <!-- INGREDIENTS -->
+            <p class = "ingredients"></p>
+            <!-- TIME -->
+            <p class = "time"></p>
+
+            <button type = "button" class = "btn" onclick = "openPopup()">make this drink!</button>
+            
+            <div class = "popup" id = "popup">
+                    <!-- DRINK NAME -->
+                    <h2 class = "popup-drink-name"></h2>
+                    
+                    <div class = "popup-body">
+                        <div class = "popup-left">
+                            <div style="height: 15px;"></div>
+                            <!-- IMAGE -->
+                            <img src = "./images/stagger-matcha.jpg" />
+                            <div style="height: 15px;"></div>
+                            <button type = "button" class = "btn" onclick = "closePopup()">close</button>
+                        </div>
+                        <div class = "popup-content">
+                            <!-- INGREDIENTS -->
+                            <p class = "ingredients"></p>
+                             <div style="height: 15px;"></div>
+                             <!-- TIME -->
+                            <p class = "time"></p>
+                             <div style="height: 15px;"></div>
+                             <!-- SIZE -->
+                            <p class = "size"></p>
+                             <div style="height: 15px;"></div>
+                             <!-- INSTRUCTIONS -->
+                            <h3 style="text-decoration: underline;">instructions:</h3>
+                            <p class = "instructions"></p>
+                             <div style="height: 15px;"></div>
+                             <!-- CALCULATE MONEY SAVED BASED ON SIZE -->
+                            <h3 class = "money-saved"></h3>
+                        </div>
+                    </div>
+            </div>
+        </div> <!-- end of recipe card -->

@@ -1,0 +1,88 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha Recipes | Cafe Recipes</title>
+    <link rel="stylesheet" href="matcha.css">
+    <link rel = "stylesheet" href = "nav.css">
+
+</head>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="matcha.html">Matcha Recipes</a>
+    <a href = "coffee.html">Coffee Recipes</a>
+    <a href="upload.html">Upload a Recipe</a>
+</nav>
+<body>
+    <!-- Visible content goes here -->
+     <div class = "header">
+    <h1>Matcha Recipes</h1>
+    <p>Discover delicious matcha recipes to make at home.</p>
+    </div>
+
+
+    <div class="recipe-card-container">
+        <div class="recipe-card">
+            <!-- DRINK NAME -->
+            <h2>Stagger Double Matcha Latte</h2>
+            <!-- IMAGE -->
+            <img src = "./images/stagger-matcha.jpg" />
+            <!-- INGREDIENTS -->
+            <p><em>Ingredients:</em> matcha powder, milk, sweetener (optional)</p>
+            <!-- TIME -->
+            <p><em>Time to make:</em> 5 minutes</p>
+
+            <button type = "button" class = "btn" onclick = "openPopup()">make this drink!</button>
+            
+            <div class = "popup" id = "popup">
+                    <!-- DRINK NAME -->
+                    <h2>Stagger Double Matcha Latte</h2>
+                    
+                    <div class = "popup-body">
+                        <div class = "popup-left">
+                            <div style="height: 15px;"></div>
+                            <!-- IMAGE -->
+                            <img src = "./images/stagger-matcha.jpg" />
+                            <div style="height: 15px;"></div>
+                            <h3 style="text-decoration: underline;">story behind this recipe</h3>
+                            <p>This recipe reminds me of a cozy afternoon in a small cafe, reading a good book and being transported to another world.</p>
+                             <div style="height: 15px;"></div>
+                            <button type = "button" class = "btn" onclick = "closePopup()">close</button>
+                        </div>
+                        <div class = "popup-content">
+                            <!-- INGREDIENTS -->
+                            <p><em>Ingredients:</em> matcha powder, milk, sweetener (optional)</p>
+                             <div style="height: 15px;"></div>
+                             <!-- TIME -->
+                            <p><em>Time to make:</em> 5 minutes</p>
+                             <div style="height: 15px;"></div>
+                             <!-- SIZE -->
+                            <p><em>Size:</em> 16oz</p>
+                             <div style="height: 15px;"></div>
+                             <!-- INSTRUCTIONS -->
+                            <h3 style="text-decoration: underline;">instructions:</h3>
+                            <ol>
+                                <li>Whisk 1 tsp matcha powder with 2 tbsp hot water until smooth.</li>
+                                <li>Add 1 cup milk and whisk until combined.</li>
+                                <li>Add sweetener to taste (optional).</li>
+                            </ol>
+                             <div style="height: 15px;"></div>
+                             <!-- CALCULATE MONEY SAVED BASED ON SIZE -->
+                            <h3><em>Money Saved:</em> $5.30</h3>
+                        </div>
+                    </div>
+            </div>
+        </div> <!-- end of recipe card -->
+
+    </div> <!-- end of recipe card container -->
+
+    
+
+    <script src="matcha.js"></script>
+</body>
+</html>
