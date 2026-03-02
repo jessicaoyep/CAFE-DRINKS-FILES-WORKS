@@ -6,6 +6,7 @@
 .title {
     font-size: 60px;
     color: #9b8582;
+    font-family: dancing script, cursive;
 }
 
 #description {
@@ -13,6 +14,14 @@
     color: #9b8582;
     text-align: left;
     padding: 10px;
+}
+
+h2{
+    font-size: 20px;
+    color: #9b8582;
+    text-align: left;
+    padding: 10px;
+
 }
 
 .container {
@@ -27,7 +36,7 @@
 .beedee-container {
     display: grid;
     /* Creates two columns of equal width that take up all available space */
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr 2fr;
     /* Optional: Adds space between the grid items */
     gap: 20px; 
     /* Optional: Defines the height of implicitly created rows (adjust as needed) */
@@ -41,7 +50,16 @@
     margin-left:auto;
     margin-right:auto;
     align-items: center;
+    text-align: center;
+    
 }
+
+.beetitle{
+    font-size: 30px;
+    text-align: center;
+    font-family: dancing script, cursive;
+}
+
 
 form{
     background: #fff; 
