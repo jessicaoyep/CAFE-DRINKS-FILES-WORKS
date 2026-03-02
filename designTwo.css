@@ -1,15 +1,16 @@
 .header{
     text-align:left;
+    margin-left: 10px;
 }
 
 .title {
     font-size: 60px;
-    color: #e9d3d0;
+    color: #9b8582;
 }
 
 #description {
     font-size: 20px;
-    color: #e9d3d0;
+    color: #9b8582;
     text-align: left;
     padding: 10px;
 }
